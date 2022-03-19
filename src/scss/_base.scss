@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+body {
+  background: $bg-color;
+  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+main {
+  height: 10000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Chewy', cursive;
+}
+
+main div {
+  width: 40%;
+  padding: 2em;
+  background: #80808040;
+  border-radius: 50% 20% / 10% 40%;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+main div:nth-child(odd) {
+  align-self: flex-end;
+}
+
+main div:nth-last-child(2) {
+  align-self: center;
+  position: sticky;
+  top: 10vh;
+}
+
+footer {
+  width: 100%;
+  font-size: .8em;
+}
+
+footer p {
+  text-align: center;
+  width: 100%;
+}
+
+#layer0 {
+  height: 5000px;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background-image: url("/dist/img/layer0.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  top: 0;
+  margin-top: 4em;
+}
+
+#layer1 {
+  height: 7500px;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+#layer1 img {
+  height: 85px;
+  width: auto;
+  position: absolute;
+}
+
+#layer2 {
+  height: 15000px;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+#layer2 img {
+  height: 45px;
+  width: auto;
+  position: absolute;
+}
+
+main div h2 {
+  font-family: 'Chewy', cursive;
+}
