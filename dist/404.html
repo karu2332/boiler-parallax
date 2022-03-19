@@ -5,7 +5,12 @@
   <meta charset="utf-8">
   <title>Page Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
   <style>
+  @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     * {
       line-height: 1.2;
       margin: 0;
@@ -27,14 +32,53 @@
     }
 
     h1 {
-      color: #555;
-      font-size: 2em;
+      color: black;
+      font-size: 5em;
       font-weight: 400;
+      font-family: 'Prata', serif;
     }
 
     p {
+      color: black;
+      font-size: 1em;
       margin: 0 auto;
       width: 280px;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+    }
+
+    #image {
+      width: auto;
+      height: 75px;
+      padding-top: 5em;
+    }
+
+    .button {
+      background-color: #ffe135;
+      border: 2px solid black;
+      padding: 5px 11px;
+      margin-top: 5em;
+      padding: 5px 10px;
+      text-align: center;
+      display: inline-block;
+      font-size: 12px;
+      margin: 10px 30px;
+      cursor: pointer;
+      text-decoration:none;
+    }
+
+    a:visited {
+     text-decoration: none;
+     color: black;;
     }
 
     @media only screen and (max-width: 280px) {
@@ -54,8 +98,12 @@
 </head>
 
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+  <div class="container">
+    <img id="image" src="img/rubber_duck.png" alt="Rubber duck">
+    <h1>Oops...</h1>
+    <p>Page not found.</p>
+    <a href='index.html' class="button">Home</a>
+  </div>
 </body>
 
 </html>
